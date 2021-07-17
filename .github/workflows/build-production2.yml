@@ -17,7 +17,7 @@ jobs:
         
       - name: Output GITHUB_REF value
         shell: bash
-        run: echo '${{ github_ref.refs.tags }}'
+        run: echo "$GITHUB_REF"
 
       - name: Docker Login
         uses: docker/login-action@v1
